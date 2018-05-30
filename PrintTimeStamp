@@ -1,0 +1,14 @@
+    //Ryan S. Hill 2018
+	// print Timestamp
+	
+
+
+    //pre: none
+    // post: prints timeStamp to standard output with date(yyyy-mm-dd) and time (HH:mm:ss) and descriptor
+   
+
+   public static void printTimeStamp(String descriptor)
+   {
+	    String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
+		System.out.println("Execution " + descriptor + "  at: " + timeStamp);
+   }

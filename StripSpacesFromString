@@ -1,0 +1,21 @@
+    //Ryan S. Hill 2018
+	// Strip out spaces from String
+	
+	//pre: none
+            // post: returns theString  with all  whitespace removed, or an empty string if theString was all whitespace
+	public static String stripSpaces(String theString) {
+		// TODO Auto-generated method stub
+		String temp="";
+		int count=0;
+		for(int i=0; i< theString.length(); i++)
+		{
+			if(!Character.isWhitespace(theString.charAt(i)))
+					{
+					temp += theString.charAt(i);
+					count ++;
+					if(count == 6)
+						break;
+					}
+		}
+		return temp;
+	}

@@ -1,0 +1,22 @@
+    //Ryan S. Hill 2018
+	// Strip out non-Alpha characters from string
+	
+
+//pre: none
+             //post: returns a string with only alphanumeric chars up to 6.
+             public static String stripNonAlpha(String theString) {
+		// TODO Auto-generated method stub
+		String temp="";
+		int count=0;
+		for(int i=0; i< theString.length(); i++)
+		{
+			if(Character.isLetter(theString.charAt(i)) ||Character.isDigit(theString.charAt(i)))
+					{
+					temp += theString.charAt(i);
+					count ++;
+					if(count == 6)
+						break;
+					}
+		}
+		return temp;
+	}
